@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Illustration of installed white shaker kitchen cabinets with a dark countertop">
+  <defs>
+    <pattern id="backsplash" width="50" height="25" patternUnits="userSpaceOnUse">
+      <rect width="50" height="25" fill="#E7E2DA"/>
+      <path d="M0 0H50M0 12.5H50M25 0V12.5M0 12.5V25M50 12.5V25" stroke="#D2CABF" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#EFEBE5"/>
+  <rect y="700" width="800" height="100" fill="#B9AE9F"/>
+  <!-- upper cabinets -->
+  <g fill="#F7F5F1" stroke="#CFC8BE" stroke-width="4">
+    <rect x="60" y="90" width="160" height="230"/>
+    <rect x="230" y="90" width="160" height="230"/>
+    <rect x="580" y="90" width="160" height="230"/>
+  </g>
+  <g fill="none" stroke="#DDD6CC" stroke-width="4">
+    <rect x="80" y="110" width="120" height="190"/>
+    <rect x="250" y="110" width="120" height="190"/>
+    <rect x="600" y="110" width="120" height="190"/>
+  </g>
+  <g fill="#404040">
+    <rect x="186" y="270" width="6" height="34" rx="3"/>
+    <rect x="256" y="270" width="6" height="34" rx="3"/>
+    <rect x="606" y="270" width="6" height="34" rx="3"/>
+  </g>
+  <!-- hood -->
+  <path d="M440 90h90v120l40 70H400l40-70z" fill="#404040"/>
+  <!-- backsplash -->
+  <rect x="60" y="320" width="680" height="160" fill="url(#backsplash)"/>
+  <!-- countertop -->
+  <rect x="40" y="480" width="720" height="26" fill="#404040"/>
+  <!-- lower cabinets -->
+  <g fill="#F7F5F1" stroke="#CFC8BE" stroke-width="4">
+    <rect x="60" y="506" width="160" height="194"/>
+    <rect x="230" y="506" width="160" height="194"/>
+    <rect x="400" y="506" width="170" height="194"/>
+    <rect x="580" y="506" width="160" height="194"/>
+  </g>
+  <g fill="none" stroke="#DDD6CC" stroke-width="4">
+    <rect x="80" y="526" width="120" height="154"/>
+    <rect x="250" y="526" width="120" height="154"/>
+    <rect x="420" y="526" width="130" height="40"/>
+    <rect x="420" y="580" width="130" height="100"/>
+    <rect x="600" y="526" width="120" height="154"/>
+  </g>
+  <g fill="#404040">
+    <rect x="186" y="540" width="6" height="34" rx="3"/>
+    <rect x="256" y="540" width="6" height="34" rx="3"/>
+    <rect x="465" y="543" width="40" height="6" rx="3"/>
+    <rect x="465" y="596" width="40" height="6" rx="3"/>
+    <rect x="606" y="540" width="6" height="34" rx="3"/>
+  </g>
+  <!-- accents -->
+  <rect x="120" y="440" width="34" height="40" rx="6" fill="#B52A2C"/>
+  <path d="M640 480v-46a22 22 0 0 1 44 0" fill="none" stroke="#9E9E9E" stroke-width="8" stroke-linecap="round"/>
+</svg>

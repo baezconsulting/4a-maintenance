@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a new tiled shower with a glass panel and rain shower head">
+  <defs>
+    <pattern id="bigtile" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="#E4DFD7"/>
+      <path d="M0 0H120V120" fill="none" stroke="#CFC7BB" stroke-width="3"/>
+    </pattern>
+    <pattern id="mosaic" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#6B6B6B"/>
+      <rect x="2" y="2" width="20" height="20" rx="2" fill="#5A5A5A"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bigtile)"/>
+  <!-- shower floor -->
+  <path d="M0 500H800V600H0z" fill="url(#mosaic)"/>
+  <rect y="494" width="800" height="8" fill="#404040"/>
+  <rect x="380" y="540" width="40" height="40" rx="4" fill="#B9B9B9"/>
+  <path d="M388 548h24M388 556h24M388 564h24M388 572h24" stroke="#8E8E8E" stroke-width="2"/>
+  <!-- niche -->
+  <rect x="140" y="250" width="150" height="110" rx="4" fill="#404040"/>
+  <rect x="150" y="260" width="130" height="90" fill="#D3CCC1"/>
+  <rect x="166" y="290" width="22" height="60" rx="6" fill="#FFFFFF"/>
+  <rect x="198" y="300" width="22" height="50" rx="6" fill="#B52A2C"/>
+  <rect x="230" y="306" width="22" height="44" rx="6" fill="#9AA7A0"/>
+  <!-- rain head and valve -->
+  <path d="M520 0V90h-40" fill="none" stroke="#9E9E9E" stroke-width="10" stroke-linecap="round"/>
+  <rect x="400" y="86" width="140" height="16" rx="8" fill="#404040"/>
+  <g stroke="#9CC4D3" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M420 116v40M440 116v60M460 116v30M480 116v70M500 116v45M520 116v55"/>
+    <path d="M430 190v40M470 200v50M510 186v36"/>
+  </g>
+  <circle cx="470" cy="330" r="30" fill="#404040"/>
+  <rect x="466" y="300" width="8" height="40" rx="4" fill="#B9B9B9"/>
+  <!-- glass panel -->
+  <rect x="600" y="40" width="190" height="460" fill="#CFE3EA" opacity="0.55"/>
+  <rect x="600" y="40" width="8" height="460" fill="#9E9E9E"/>
+  <path d="M640 80l100 120M650 160l70 84" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+</svg>

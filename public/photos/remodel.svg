@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Illustration of a remodeled bathroom with a freestanding tub and large-format wall tile">
+  <defs>
+    <pattern id="wall" width="160" height="80" patternUnits="userSpaceOnUse">
+      <rect width="160" height="80" fill="#E4DFD7"/>
+      <path d="M0 0H160M0 40H160M80 0V40M0 40V80M160 40V80" stroke="#CFC7BB" stroke-width="3"/>
+    </pattern>
+    <pattern id="hex" width="40" height="69.28" patternUnits="userSpaceOnUse">
+      <rect width="40" height="69.28" fill="#F4F1EC"/>
+      <path d="M20 0l20 11.55v23.1L20 46.19 0 34.64V11.55z M0 46.19v23.09M40 46.19v23.09" fill="none" stroke="#CFC7BB" stroke-width="2.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="url(#wall)"/>
+  <rect y="600" width="800" height="200" fill="url(#hex)"/>
+  <rect y="594" width="800" height="8" fill="#404040"/>
+  <!-- window -->
+  <rect x="470" y="110" width="220" height="260" fill="#F7F5F1"/>
+  <rect x="486" y="126" width="188" height="228" fill="#CFE3EA"/>
+  <path d="M580 126v228M486 240h188" stroke="#F7F5F1" stroke-width="10"/>
+  <!-- tub -->
+  <path d="M110 460h460c0 110-70 170-170 170H280c-100 0-170-60-170-170z" fill="#FFFFFF" stroke="#D6CFC5" stroke-width="4"/>
+  <rect x="96" y="448" width="488" height="22" rx="11" fill="#FFFFFF" stroke="#D6CFC5" stroke-width="4"/>
+  <path d="M160 630l-14 30M520 630l14 30" stroke="#404040" stroke-width="10" stroke-linecap="round"/>
+  <!-- floor faucet -->
+  <path d="M640 600V380a50 50 0 0 0-100 0v20" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round"/>
+  <!-- towel and stool -->
+  <path d="M120 450v-60h90v60" fill="#B52A2C"/>
+  <rect x="660" y="520" width="80" height="12" rx="4" fill="#404040"/>
+  <path d="M672 532v68M728 532v68" stroke="#404040" stroke-width="8"/>
+  <rect x="676" y="490" width="48" height="30" rx="4" fill="#F7F5F1" stroke="#D6CFC5" stroke-width="3"/>
+</svg>
