@@ -26,10 +26,14 @@ All business details, services and photos are in `src/site.js`.
 
 Without a Formspree ID, the form opens the visitor's email app addressed to the email in `src/site.js`.
 
-## Deploy
+## Deploy to SmarterASP.NET
 
-```bash
-npm run build
-```
+Deployment is automatic: every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and uploads `dist/` to SmarterASP.NET over FTPS using lftp. Old build files in `assets/` are removed; nothing else on the server is deleted. You can also run it by hand from the repo's **Actions** tab.
 
-Upload the contents of `dist/` to any static host (Netlify, Vercel, Cloudflare Pages, or a standard web host's public folder).
+Required GitHub repo secrets (Settings → Secrets and variables → Actions):
+
+- `FTP_HOST` – FTP host from the SmarterASP control panel (e.g. `winXXXX.site4now.net`)
+- `FTP_USERNAME` / `FTP_PASSWORD` – the site's FTP account
+- `VITE_FORMSPREE_ID` – optional, enables the contact form
+
+Optional repo variable `FTP_SERVER_DIR` if the FTP login doesn't land in the site root (e.g. `/site1/`). Defaults to `./`.
