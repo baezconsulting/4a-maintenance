@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { business } from '../site.js'
+import { business, gallery } from '../site.js'
 
 const links = [
   { href: '#services', label: 'Services' },
-  { href: '#work', label: 'Projects' },
+  ...(gallery.photos.length ? [{ href: '#work', label: gallery.navLabel }] : []),
   { href: '#quote', label: 'Contact' },
 ]
 

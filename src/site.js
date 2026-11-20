@@ -37,19 +37,35 @@ export const services = [
   },
 ]
 
-// Photos live in /public/photos. Swap any `src` for a real project photo,
-// e.g. '/photos/job-smith-bath.jpg'. Set src to '' to show a placeholder.
+// Short checkmarked points under the hero buttons. Only list what's true.
+export const trustPoints = ['Free estimates', 'Clean, on-time work']
+
+// Hero photos: free stock from Unsplash (Unsplash License, commercial use OK, no credit required).
+//   hero-bathroom.jpg: Peter Muniz, https://unsplash.com/photos/9OKuf13OidA
+//   hero-shower.jpg:   Point3D Commercial Imaging Ltd., https://unsplash.com/photos/HOVrnurWcb0
+// The first photo is the large one (portrait, 4:5); the second overlaps it (square).
+// Swap in real job photos anytime, e.g. '/photos/job-smith-bath.jpg'.
 export const heroPhotos = [
-  { src: '/photos/bathroom.svg', alt: 'Renovated bathroom with a dark vanity and round mirror', label: '[Photo: finished bathroom]' },
-  { src: '/photos/shower.svg', alt: 'New tiled shower with a glass panel and rain shower head', label: '[Photo: new shower]' },
-  { src: '/photos/tile.svg', alt: 'Diamond-pattern tile being installed', label: '[Photo: tile detail]' },
+  { src: '/photos/hero-bathroom.jpg', alt: 'Modern bathroom with stone tile walls, a wood vanity and a walk-in shower' },
+  { src: '/photos/hero-shower.jpg', alt: 'Tiled walk-in shower with a rain shower head, hand shower and built-in bench' },
 ]
 
-export const projectPhotos = [
-  { src: '/photos/cabinets.svg', alt: 'Installed white shaker kitchen cabinets', label: '[Project photo]' },
-  { src: '/photos/window.svg', alt: 'Newly installed double window with white trim', label: '[Project photo]' },
-  { src: '/photos/remodel.svg', alt: 'Remodeled bathroom with a freestanding tub', label: '[Project photo]' },
-]
+// Gallery section. These are free Unsplash stock photos (Unsplash License), NOT this
+// business's own jobs, so the section is titled as styles/ideas rather than "Recent work".
+//   gallery-marble-bath.jpg:      Clay Banks, https://unsplash.com/photos/Fuguvv3goCA
+//   gallery-double-vanity.jpg:    Peter Muniz, https://unsplash.com/photos/6YEMkA-2ji8
+//   gallery-dark-tile-shower.jpg: immo RENOVATION, https://unsplash.com/photos/en9pOa2YAKI
+// When you have real job photos, swap them in and change the title to 'Recent work'
+// and the menu label to 'Projects'.
+export const gallery = {
+  title: 'Styles we build',
+  navLabel: 'Gallery',
+  photos: [
+    { src: '/photos/gallery-marble-bath.jpg', alt: 'Bright bathroom with marble tile, a walk-in shower and a wood vanity' },
+    { src: '/photos/gallery-double-vanity.jpg', alt: 'Modern bathroom with a double vanity and a lit walk-in shower niche' },
+    { src: '/photos/gallery-dark-tile-shower.jpg', alt: 'Walk-in shower with large dark tiles and a built-in niche' },
+  ],
+}
 
 // Contact form: create a free form at https://formspree.io and paste its ID
 // into a .env file as VITE_FORMSPREE_ID=xxxxxxx. Without it, the form opens

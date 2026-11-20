@@ -15,7 +15,7 @@ Open http://localhost:5173.
 
 All business details, services and photos are in `src/site.js`.
 
-- **Photos:** the site ships with illustrations in `public/photos/`. To use real project photos, add them to that folder and change each `src` (for example `'/photos/bath-1.jpg'`).
+- **Photos:** the hero and gallery use free Unsplash stock photos in `public/photos/` (credits in `src/site.js`). The gallery is titled "Styles we build" because these aren't your own jobs; when you have real job photos, swap them into `gallery.photos` and change the title to "Recent work".
 - **Placeholders to fill:** `[EMAIL]`, `[SERVICE AREA]`, `[LICENSE #]`.
 
 ## Contact form
