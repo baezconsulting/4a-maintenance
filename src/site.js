@@ -6,7 +6,7 @@ export const business = {
   phoneHref: 'tel:+12392808172',
   email: '4amaintenance@gmail.com',
   serviceArea: 'Naples, Ft Myers, Cape Coral, Lehigh Acres',
-  license: '[LICENSE #]',
+  license: '', // e.g. 'Lic. #CBC1234567'. Leave empty to hide it in the footer.
 }
 
 export const services = [

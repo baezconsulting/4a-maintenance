@@ -11,8 +11,8 @@ export default function Footer() {
           </span>
         </div>
         <span>
-          <a href={business.phoneHref} className="hover:text-brand">{business.phoneDisplay}</a> · {business.email} ·{' '}
-          {business.license}
+          <a href={business.phoneHref} className="hover:text-brand">{business.phoneDisplay}</a> · {business.email}
+          {business.license && <> · {business.license}</>}
         </span>
       </div>
     </footer>
