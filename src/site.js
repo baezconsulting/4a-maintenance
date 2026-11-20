@@ -4,7 +4,7 @@ export const business = {
   name: 'AAAA Maintenance',
   phoneDisplay: '+1 239-280-8172',
   phoneHref: 'tel:+12392808172',
-  email: 'contact@4amaintenance.com',
+  email: '4amaintenance@gmail.com',
   serviceArea: 'Naples, Ft Myers, Cape Coral, Lehigh Acres',
   license: '[LICENSE #]',
 }
@@ -67,6 +67,6 @@ export const gallery = {
   ],
 }
 
-// Quote form: Formspree form https://formspree.io/f/xzervlbd (sends to contact@4amaintenance.com).
+// Quote form: Formspree form https://formspree.io/f/xzervlbd (recipient is set in Formspree).
 // The ID is public by design (it's in the page source). A VITE_FORMSPREE_ID env var/secret overrides it.
 export const formspreeId = import.meta.env.VITE_FORMSPREE_ID || 'xzervlbd'

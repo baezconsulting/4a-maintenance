@@ -20,7 +20,7 @@ All business details, services and photos are in `src/site.js`.
 
 ## Contact form
 
-The quote form submits to Formspree (form `xzervlbd`, set in `src/site.js`), which emails each submission to contact@4amaintenance.com. Manage the form, recipient and spam settings at https://formspree.io.
+The quote form submits to Formspree (form `xzervlbd`, set in `src/site.js`), which emails each submission to the recipient set in the Formspree dashboard. Manage the form, recipient and spam settings at https://formspree.io.
 
 ## Deploy to SmarterASP.NET
 
