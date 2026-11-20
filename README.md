@@ -20,11 +20,7 @@ All business details, services and photos are in `src/site.js`.
 
 ## Contact form
 
-1. Create a free form at https://formspree.io.
-2. Create a `.env` file in the project root containing `VITE_FORMSPREE_ID=your_form_id`.
-3. Rebuild.
-
-Without a Formspree ID, the form opens the visitor's email app addressed to the email in `src/site.js`.
+The quote form submits to Formspree (form `xzervlbd`, set in `src/site.js`), which emails each submission to contact@4amaintenance.com. Manage the form, recipient and spam settings at https://formspree.io.
 
 ## Deploy to SmarterASP.NET
 
@@ -34,6 +30,5 @@ Required GitHub repo secrets (Settings → Secrets and variables → Actions):
 
 - `FTP_HOST` – FTP host from the SmarterASP control panel (e.g. `winXXXX.site4now.net`)
 - `FTP_USERNAME` (or `FTP_USER`) / `FTP_PASSWORD` – the site's FTP account
-- `VITE_FORMSPREE_ID` – optional, enables the contact form
 
 Optional repo variable `FTP_SERVER_DIR` if the FTP login doesn't land in the site root (e.g. `/site1/`). Defaults to `./`.

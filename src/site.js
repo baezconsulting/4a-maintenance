@@ -67,7 +67,6 @@ export const gallery = {
   ],
 }
 
-// Contact form: create a free form at https://formspree.io and paste its ID
-// into a .env file as VITE_FORMSPREE_ID=xxxxxxx. Without it, the form opens
-// the visitor's email app instead.
-export const formspreeId = import.meta.env.VITE_FORMSPREE_ID || ''
+// Quote form: Formspree form https://formspree.io/f/xzervlbd (sends to contact@4amaintenance.com).
+// The ID is public by design (it's in the page source). A VITE_FORMSPREE_ID env var/secret overrides it.
+export const formspreeId = import.meta.env.VITE_FORMSPREE_ID || 'xzervlbd'
