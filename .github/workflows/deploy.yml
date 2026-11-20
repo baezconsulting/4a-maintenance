@@ -36,7 +36,7 @@ jobs:
       - name: Upload dist/ via FTPS
         env:
           FTP_HOST: ${{ secrets.FTP_HOST || vars.FTP_HOST }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME || vars.FTP_USERNAME }}
           LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           FTP_SERVER_DIR: ${{ vars.FTP_SERVER_DIR }}
         run: |
@@ -48,6 +48,10 @@ jobs:
           [ "$raw_bytes" -ne "${#host}" ] && echo "::warning::FTP_HOST contained $((raw_bytes - ${#host})) extra/invisible bytes; they were stripped. Consider retyping the secret."
           if ! getent hosts "$host" > /dev/null; then
             echo "::error::FTP_HOST (secret or variable) does not resolve. Set it to the FTP host from the SmarterASP control panel."
+            exit 1
+          fi
+          if [ -z "$FTP_USERNAME" ] || [ -z "$LFTP_PASSWORD" ]; then
+            echo "::error::FTP_USERNAME or FTP_PASSWORD is empty. Check the names under Settings → Secrets and variables → Actions."
             exit 1
           fi
           dir="${FTP_SERVER_DIR:-.}"
