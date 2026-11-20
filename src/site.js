@@ -4,7 +4,7 @@ export const business = {
   name: 'AAAA Maintenance',
   phoneDisplay: '+1 239-280-8172',
   phoneHref: 'tel:+12392808172',
-  email: 'mcobra2003@gmail.com',
+  email: 'contact@4amaintenance.com',
   serviceArea: 'Naples, Ft Myers, Cape Coral, Lehigh Acres',
   license: '[LICENSE #]',
 }
